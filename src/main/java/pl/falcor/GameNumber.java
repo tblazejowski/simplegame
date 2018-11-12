@@ -3,7 +3,7 @@ package pl.falcor;
 import java.util.Objects;
 
 /**
- * Representation of number that should be taken out from interval from which game/guessing take place.
+ * Representation of number that should be determined by the interval from which game/guessing take place.
  *
  */
 
