@@ -12,7 +12,7 @@ public class Interval {
     private int celling;
     private int bottom;
 
-    public Interval(int celling, int bottom) {
+    public Interval(int bottom, int celling) {
         this.celling = celling;
         this.bottom = bottom;
     }
