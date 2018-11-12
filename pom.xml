@@ -8,8 +8,7 @@
     <artifactId>simplegame</artifactId>
     <version>0.1</version>
     <name>simple_game_app</name>
-    <description>Here description should be placed</description>
-    <url>lafk.pl</url>
+    <description>This simple game scope is to give taste of object programming</description>
   
     <properties>
              <!-- https://maven.apache.org/general.html#encoding-warning -->
