@@ -2,14 +2,21 @@ package pl.falcor.domain;
 
 public class Inspector {
 
-    public static String inspect(GameNumber drawnNumber, GameNumber providedNumber) {
+    public static StringBuilder message = new StringBuilder();
 
-        StringBuilder result = new StringBuilder("Guessing result: ");
+    public static boolean ifGuessed(GameNumber drawnNumber, GameNumber providedNumber) {
+
         if (drawnNumber.equals(providedNumber)) {
-            result.append("Congratulations! You've guessed the drawn number.");
+            message.replace(0, message.length(),"Congratulations! You've guessed the drawn number.");
+            return true;
         } else if (drawnNumber.isHigherThan(providedNumber)) {
-            result.append("Your bet is too high!");
-        } else result.append("Your bet is too low!");
-        return result.toString();
+            message.replace(0, message.length(),"Your bet is too high!");
+            return false;
+        } else message.replace(0, message.length(),"Your bet is too low!");
+        return false;
+    }
+
+    public static String getMessage() {
+        return message.toString();
     }
 }
