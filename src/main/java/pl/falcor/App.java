@@ -4,6 +4,6 @@ class App {
 	public static void main(String[] args) {
 		Interval interval = new Interval(1, 100);
 		GameNumber drawnNumber = interval.draw();
-        System.out.println("Drawn number from interval 1-100 is: " + drawnNumber.toString());
+        Projector.display(String.format("Welcome in simple guessing game! Please provide number %s", interval));
 	}
 }

@@ -10,14 +10,19 @@ import java.util.Random;
 public class Interval {
 
     private int celling;
-    private int bottom;
+    private int floor;
 
-    public Interval(int bottom, int celling) {
+    public Interval(int floor, int celling) {
         this.celling = celling;
-        this.bottom = bottom;
+        this.floor = floor;
     }
 
     public GameNumber draw(){
-        return new GameNumber(new Random().nextInt(celling - bottom + 1) + bottom);
+        return new GameNumber(new Random().nextInt(celling - floor + 1) + floor);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("from interval <%d, %d>", floor, celling);
     }
 }
