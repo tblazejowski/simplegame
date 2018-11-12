@@ -17,7 +17,7 @@ public class Interval {
         this.bottom = bottom;
     }
 
-    public int draw(){
-        return new Random().nextInt(celling - bottom + 1) + bottom;
+    public GameNumber draw(){
+        return new GameNumber(new Random().nextInt(celling - bottom + 1) + bottom);
     }
 }
