@@ -1,4 +1,4 @@
-package pl.falcor;
+package pl.falcor.io;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class MyReader {
 
-    static int read(){
+    public static int read(){
         return new Scanner(System.in).nextInt();
     }
 }

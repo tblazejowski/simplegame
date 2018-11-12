@@ -1,4 +1,4 @@
-package pl.falcor;
+package pl.falcor.domain;
 
 import java.util.Objects;
 
@@ -15,7 +15,7 @@ public class GameNumber {
         this.value = value;
     }
 
-    boolean isHigherThan(GameNumber providedNumber){
+    public boolean isHigherThan(GameNumber providedNumber){
         return providedNumber.value > this.value;
     }
 

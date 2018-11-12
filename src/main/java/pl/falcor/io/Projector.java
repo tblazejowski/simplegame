@@ -1,4 +1,4 @@
-package pl.falcor;
+package pl.falcor.io;
 
 /**
  * Wrapper for abstraction responsible for displaying messages to user.
@@ -7,7 +7,7 @@ package pl.falcor;
 
 public class Projector {
 
-    static void display(String message) {
+    public static void display(String message) {
         System.out.println(message);
     }
 }

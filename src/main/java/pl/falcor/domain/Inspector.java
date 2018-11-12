@@ -1,8 +1,8 @@
-package pl.falcor;
+package pl.falcor.domain;
 
 public class Inspector {
 
-    static String inspect(GameNumber drawnNumber, GameNumber providedNumber) {
+    public static String inspect(GameNumber drawnNumber, GameNumber providedNumber) {
 
         StringBuilder result = new StringBuilder("Guessing result: ");
         if (drawnNumber.equals(providedNumber)) {

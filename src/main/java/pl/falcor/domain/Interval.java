@@ -1,4 +1,4 @@
-package pl.falcor;
+package pl.falcor.domain;
 
 import java.util.Random;
 
